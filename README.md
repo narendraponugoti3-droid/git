@@ -705,3 +705,17 @@ git branch -d payments
 | `git --version`                 | Check Git version  |
 | `git config --global user.name` | Configure username |
 | `git con                        |                    |
+
+```bash
+git clone  -copy the entire remote repos to local machines
+git pull  -bring the remote repos changes into working directory
+git push : moving the changes from working directory to remote respository
+git fetch :bring the remote repos changes into local repository
+hich files changed on the remote repository before merging those changes into your local branch
+git diff --name-status main origin/main
+git diff main origin/main
+git merge origin/main
+$git branch -vv
+histroy of commit 
+$git show --stat HEAD 
+```
