@@ -26,7 +26,7 @@ The purpose is to understand Git not only as a list of commands, but as a **real
 * Remote branches
 * Practical developer workflow
 * Git interview questions
-* git
+* git-narendra
 
 ---
 
