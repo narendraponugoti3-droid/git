@@ -68,4 +68,5 @@ pipeline.Workspace : workspace directory for a particuler pipeline
 And then Run the build 
 
 ## Pipeline code 
-<img width="734" height="592" alt="image" src="https://github.com/user-attachments/assets/47e535ed-dc46-4179-8d3b-173adc8b0843" />
+<img width="674" height="623" alt="image" src="https://github.com/user-attachments/assets/f1abd732-ebe5-4730-a1be-f2be804fbffc" />
+
