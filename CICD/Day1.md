@@ -29,11 +29,10 @@ Step3: once Create a donot project then modify the index.html page based on your
 	   $git status 
 	   $git add . | $git commit -m "dotnet push" 
 	   $git push 
-	   
+```xml   
 Step4: go to Azure pipelines  --> Create a Pipelines -->Azure Repos Git --> Select a Repos  
         Choose AP.Net --> generate the Pipeline YAML Code 
 		Then Remove the test case and and then publish build artifact 
 		Then Save and Run 
-
-
-    <img width="916" height="591" alt="image" src="https://github.com/user-attachments/assets/8dad1877-7dc6-4934-bb3d-cd14105265fe" />
+		```
+ <img width="916" height="591" alt="image" src="https://github.com/user-attachments/assets/8dad1877-7dc6-4934-bb3d-cd14105265fe" />
