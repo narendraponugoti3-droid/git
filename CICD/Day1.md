@@ -35,4 +35,4 @@ Step4: go to Azure pipelines  --> Create a Pipelines -->Azure Repos Git --> Sele
 		Then Remove the test case and and then publish build artifact 
 		Then Save and Run 
 		```
- <img width="916" height="591" alt="image" src="https://github.com/user-attachments/assets/8dad1877-7dc6-4934-bb3d-cd14105265fe" />
+<img width="916" height="591" alt="image" src="https://github.com/user-attachments/assets/8dad1877-7dc6-4934-bb3d-cd14105265fe" />
