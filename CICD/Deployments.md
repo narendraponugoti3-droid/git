@@ -32,6 +32,17 @@ and PHP and Python
 
 
 
+Step1: Go to Entra in azure cloud -->Manage --> App Registration --> New Registraion 
+<img width="1142" height="625" alt="image" src="https://github.com/user-attachments/assets/9b859de7-e39c-4085-a91c-69cba0e77985" />
+<img width="1276" height="466" alt="image" src="https://github.com/user-attachments/assets/d6564c2a-1c03-4704-af3d-9cf6af58f510" />
+
+Click Certificate and Secrets 
+<img width="652" height="201" alt="image" src="https://github.com/user-attachments/assets/406dcb14-f9ba-4d91-b7aa-413c634afd29" />
 
 
+
+<img width="1498" height="407" alt="image" src="https://github.com/user-attachments/assets/33475cec-663e-4fd7-9b4f-7f01388c1864" />
+
+Federated Credentials: every time it will generate the token 
+click Add credentials 
 
