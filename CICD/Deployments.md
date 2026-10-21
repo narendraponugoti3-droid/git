@@ -46,3 +46,18 @@ Click Certificate and Secrets
 Federated Credentials: every time it will generate the token 
 click Add credentials 
 
+
+<img width="1277" height="464" alt="image" src="https://github.com/user-attachments/assets/640016cb-0f14-4b87-b1d5-172b2e53358a" />
+
+Then Go to Azure Devops --> Proejct settings --> Service Conections --> Create a new Services --> Azure Resource manager 
+<img width="466" height="841" alt="image" src="https://github.com/user-attachments/assets/db8be8c1-4143-4682-b237-bb9640bbcba0" />
+
+It is throwning an error because we created the user but did not give the permisions so you should give the permissions 
+Click on Azure Subscription 
+<img width="1066" height="291" alt="image" src="https://github.com/user-attachments/assets/9dcf9ee5-69f4-4db3-8a8d-ead3d589548f" />
+
+<img width="1881" height="344" alt="image" src="https://github.com/user-attachments/assets/3346dfa2-a7d4-43f9-973d-8ca6378a3a01" />
+
+
+# Deploy the App Services 
+<img width="1543" height="758" alt="image" src="https://github.com/user-attachments/assets/3c4b5ce2-24c0-41ea-b759-a7301b249c6c" />
