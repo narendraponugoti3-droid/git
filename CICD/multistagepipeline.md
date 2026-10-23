@@ -16,3 +16,14 @@
 
 
 <img width="830" height="576" alt="image" src="https://github.com/user-attachments/assets/40d0c8c9-435d-4328-aae0-be1caf35dd12" />
+
+
+
+In the Pipeline YAML , I mentioned the environment then automatically create the environments in azure devops 
+then we can create the polices on the environemnts 
+<img width="1504" height="284" alt="image" src="https://github.com/user-attachments/assets/a9bf907e-f1f4-4a1d-b23b-d7cd7e971083" />
+
+
+I need to configure the approval for Prod 
+Click Prod --> Approvals and checks --> view All checks --> Add Check --> Pre-Check Approvals --> Next 
+Pre-check approvals --> Approvers Add the name 
