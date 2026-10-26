@@ -98,3 +98,21 @@ resource "azurerm_linux_web_app" "credwebapp" {
     application_stack {
       node_version = "22-lts"
     }
+
+
+### CICD :
+
+Step1 : Create a repo on azure devops 
+Step 2: Local working directory 
+       $git init 
+	   $git add .
+	   $git commit -m " initial commit"
+	   $git remote add origin url 
+	   $git push -u origin --all 
+	   
+Step3: Create a pipeline 
+   go to market place on azure devops --> Search terraform --> get it free 
+   then go to pipeline --> new pipeline --> azure repos -->credterraform( our project)
+
+<img width="1543" height="355" alt="image" src="https://github.com/user-attachments/assets/73bef6e1-e7b1-4be6-8997-757d486638eb" />
+<img width="1520" height="665" alt="image" src="https://github.com/user-attachments/assets/63a6f162-625a-460f-870a-efa1877eb53f" />
