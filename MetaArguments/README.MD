@@ -35,5 +35,3 @@ Provisioner(deplricated)
 Cloud init :
 
 ### 
-
-
