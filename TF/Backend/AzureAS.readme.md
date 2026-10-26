@@ -19,3 +19,82 @@ Data Storage --> Containers
 Container : backend
 saname: credtfstatebackend
 rgname: TFStateRG
+
+
+
+terraform{
+ required_version= ">=1.12"
+ required_providers {
+ azurerm={
+   soruce="hashicorp/azurerm"
+   version=">=5.0"
+   }
+  }
+backend " azurerm"{
+  resoruce_group_name="" ;
+  storage_account_name="" 
+  container_name=""
+  key =""
+  }
+}
+provider "azurerm"{
+features{}
+}
+
+variables.tf
+==========
+variable "rgname"{
+ description ="resoruce group name"
+ type=string 
+ default="webapprg"
+}
+variable "asp"{
+ description ="ASP Name"
+ type=string 
+ default="credasp"
+}
+variable "webapp"{
+ description ="webapp Name"
+ type=string 
+ default="credprodwebapp"
+}
+variable "location"{
+ description ="Location"
+ type=string 
+ default="canadacentra1"
+}
+
+resoruces.tf 
+resource "azurerm_resource_group" "credrg" {
+  name     = var.rgname
+  location = var.location
+}
+
+resoruces.tf 
+------------
+resource "azurerm_resource_group" "credrg" {
+
+name = var.rgname 
+location=var.location
+}
+resource "azurerm_service_plan" "credasp"
+{
+name=var.asp
+resource_group_name=azurerm_resource_group.credrg.name
+location=azurerm_resource_group.credrg.location
+os_type="Linux"
+sku_name="B1"
+}
+
+resource "azurerm_linux_web_app" "credwebapp" {
+  name                = var.webapp
+  resource_group_name = azurerm_resource_group.credrg.name
+  location            = azurerm_resource_group.credrg.location
+  service_plan_id     = azurerm_service_plan.credasp.id
+
+  site_config {
+    always_on = false
+
+    application_stack {
+      node_version = "22-lts"
+    }
