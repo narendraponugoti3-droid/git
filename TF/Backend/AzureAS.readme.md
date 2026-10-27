@@ -21,7 +21,7 @@ saname: credtfstatebackend
 rgname: TFStateRG
 
 
-
+``` hcl
 terraform{
  required_version= ">=1.12"
  required_providers {
@@ -40,7 +40,7 @@ backend " azurerm"{
 provider "azurerm"{
 features{}
 }
-
+```
 variables.tf
 ==========
 variable "rgname"{
