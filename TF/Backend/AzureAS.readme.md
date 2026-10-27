@@ -43,6 +43,8 @@ features{}
 ```
 variables.tf
 ==========
+
+```hcl
 variable "rgname"{
  description ="resoruce group name"
  type=string 
@@ -69,9 +71,10 @@ resource "azurerm_resource_group" "credrg" {
   name     = var.rgname
   location = var.location
 }
-
+```
 resoruces.tf 
 ------------
+```hcl
 resource "azurerm_resource_group" "credrg" {
 
 name = var.rgname 
@@ -98,7 +101,7 @@ resource "azurerm_linux_web_app" "credwebapp" {
     application_stack {
       node_version = "22-lts"
     }
-
+```
 
 ### CICD :
 
