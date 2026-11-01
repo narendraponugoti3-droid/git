@@ -264,3 +264,7 @@ Azure Resources Deployed
 ```
 
 **Important:** Keep credentials out of Terraform files and Git. Use an Azure DevOps service connection or workload identity federation for authentication, and protect the production apply stage with approvals.
+
+
+### Pipeline Script 
+<img width="457" height="670" alt="image" src="https://github.com/user-attachments/assets/e77db5e8-5514-48b5-bec0-b98dfd5cd64b" />
