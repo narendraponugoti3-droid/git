@@ -1,5 +1,6 @@
 # Create AKS Cluster 
 
+<img width="640" height="484" alt="image" src="https://github.com/user-attachments/assets/2c9b02d9-a5ae-471a-a42a-cb34a426caf0" />
 
 
 
