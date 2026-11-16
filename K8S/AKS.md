@@ -30,6 +30,8 @@ Service --> provides stable network endpoint to access a group of pods
 <img width="1381" height="679" alt="image" src="https://github.com/user-attachments/assets/7df7b214-7fff-4c61-9472-cb4b33eaf6eb" />
 
 NameSpace : Logical Isolation of K8s Resources 
+``` xml
 $kubectl get ns 
 $kubectl create ns samsung 
 $kubectl get ns 
+```
