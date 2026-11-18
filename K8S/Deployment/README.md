@@ -2,28 +2,13 @@ Imagine you want to run an NGINX web server with 3 replicas in Kubernetes.
 - Deployment.yml tells Kubernetes how many NGINX containers you want.
 - Service.yml provides a single network endpoint to access those NGINX Pods.
 
+###  First understand the architecture
+<img width="745" height="625" alt="image" src="https://github.com/user-attachments/assets/12a8b880-383c-4c08-a018-1f0b298ce5a1" />
 
-flowchart TB
-    USER["User / Browser"]
-    NODE["Worker Node IP : NodePort"]
-    SVC["NGINX Service<br/>Port 80<br/>Type: NodePort"]
-    LB["Service Load Balancing"]
-
-    USER --> NODE
-    NODE --> SVC
-    SVC --> LB
-
-    subgraph CLUSTER["Kubernetes Cluster"]
-      subgraph N1["NGINX Pod 1"]
-        P1["NGINX Container<br/>Port 80"]
-      end
-      subgraph N2["NGINX Pod 2"]
-        P2["NGINX Container<br/>Port 80"]
-      end
-      subgraph N3["NGINX Pod 3"]
-        P3["NGINX Container<br/>Port 80"]
-      end
-      LB --> P1
-      LB --> P2
-      LB --> P3
-    end
+Think of it like this:
+1. You create a Deployment.
+2. Kubernetes creates 3 NGINX Pods.
+3. You create a Service.
+4. The Service finds the 3 Pods using labels.
+5. Users access the application through the Service.
+6. Service networking distributes requests across the available Pods.
