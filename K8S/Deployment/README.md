@@ -14,7 +14,7 @@ Think of it like this:
 6. Service networking distributes requests across the available Pods.
 
 ### Deployment.yml – Create 3 NGINX Pods
-
+``` yml
 apiVersion: apps/v1
 kind: Deployment
 
@@ -39,6 +39,8 @@ spec:
           image: nginx
           ports:
             - containerPort: 80
+```
+
 ### Explanation line by line
 YAML property	Simple meaning
 apiVersion: apps/v1	Kubernetes Deployment API version
@@ -64,7 +66,7 @@ The Deployment creates Pods, but how can users access those Pods?
 That's where a Kubernetes Service comes in.
 Here is your corrected Service YAML:
 
-
+``` yml
 apiVersion: v1
 kind: Service
 
@@ -80,6 +82,9 @@ spec:
   ports:
     - port: 80
       targetPort: 80
+
+```
+
 ### How does Service identify the 3 Pods? 
 In your Deployment:
 labels:
@@ -114,17 +119,17 @@ The NodePort 30080 is an example. Kubernetes normally allocates a NodePort autom
 
 ### How to execute your YAML files
 Step 1: Create Deployment
-    kubectl apply -f deployment.yml
+    - kubectl apply -f deployment.yml
 Step 2: Create Service
-  kubectl apply -f service.yml
+ -  kubectl apply -f service.yml
 Step 3: Check Pods
-   kubectl get pods
+  - kubectl get pods
 Step 4: Check Deploymen
-  kubectl get deployments
+  - kubectl get deployments
 Step 5: Check Service
-   kubectl get services
+ -  kubectl get services
 Step 6: Access NGINX
-http://<Worker-Node-IP>:30080
+- http://<Worker-Node-IP>:30080
 
 ### Important difference – Deployment vs Service 
 Deployment	                            Service
