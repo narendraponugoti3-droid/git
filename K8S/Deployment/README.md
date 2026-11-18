@@ -118,18 +118,18 @@ The request follows this path:
 The NodePort 30080 is an example. Kubernetes normally allocates a NodePort automatically from its configured range (default 30000–32767).
 
 ### How to execute your YAML files
-Step 1: Create Deployment
-    - kubectl apply -f deployment.yml
-Step 2: Create Service
- -  kubectl apply -f service.yml
-Step 3: Check Pods
-  - kubectl get pods
-Step 4: Check Deploymen
-  - kubectl get deployments
-Step 5: Check Service
- -  kubectl get services
-Step 6: Access NGINX
-- http://<Worker-Node-IP>:30080
+- Step 1: Create Deployment
+     kubectl apply -f deployment.yml
+- Step 2: Create Service
+      kubectl apply -f service.yml
+- Step 3: Check Pods
+     kubectl get pods
+- Step 4: Check Deploymen
+     kubectl get deployments
+- Step 5: Check Service
+     kubectl get services
+- Step 6: Access NGINX
+     http://<Worker-Node-IP>:30080
 
 ### Important difference – Deployment vs Service 
 Deployment	                            Service
