@@ -9,7 +9,7 @@ Service : Provides stable network endpoint to access a group of pods
 ### ClusterIP : Default Service type in K8S 
 It is used for internal communication inside a K8S Cluster 
 <img width="1222" height="385" alt="image" src="https://github.com/user-attachments/assets/56aebfd0-53c0-451f-9b1e-88f0d77c2c05" />
-
+``` xml
 $kubectl get pods 
 $kubectl get pods -A
 $kubectl get node
@@ -20,7 +20,7 @@ $kubectl expose deployment nginx  --port=80 --type=ClusterIP
 $kubectl expose deployment apache  --port=80 --type=ClusterIP
 
 $kubectl get svc 
-
+```
 Create a new pod for netwrok troubleshoot (netshoot image ) 
 $kubectl run netshoot --image=nicolaka/netshot -it -rm --bash 
 $curl http://10.0.80.170   // this apache pod Ip address 
