@@ -54,16 +54,8 @@ ports:
   - port: 80
     targetPort: 8080
 
-Kubernetes Service
-80
-Service port
 
-Forwards traffic
-targetPort: 8080
-
-Spring Boot Container
-8080
-Application listening port
+<img width="1141" height="499" alt="image" src="https://github.com/user-attachments/assets/932d241e-d07d-4deb-ad3a-d83658068c9c" />
 
 A user accesses the Service on port 80, but the request reaches Spring Boot on port 8080.
 
@@ -75,3 +67,11 @@ targetPort	Destination container port	8080
 port	Service port	80
 nodePort	Worker Node external port (NodePort Service)	30080
 
+### Remember the traffic flow:
+User → NodePort 3007 → Service port 80 → targetPort 80 → NGINX container port 80
+
+You access NGINX using:
+http://<Worker-Node-IP>:3007
+
+
+![Uploading image.png…]()
