@@ -42,6 +42,7 @@ spec:
 ```
 
 ### Explanation line by line
+``` xml 
 YAML property	Simple meaning
 apiVersion: apps/v1	Kubernetes Deployment API version
 kind: Deployment	We are creating a Deployment
@@ -55,7 +56,7 @@ name: nginx	Container name
 image: nginx	Download and run NGINX Docker image
 containerPort: 80	The application listens on port 80
 
-
+```
 ### What happens when you deploy this file?
 kubectl apply -f deployment.yml
 Kubernetes performs the following operations:
