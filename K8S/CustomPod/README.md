@@ -75,3 +75,11 @@ $kubectl create secret docker-registry  acr-secret --docker-server=growwlp.azure
     --docker-password=password  --docker-email=
 
 <img width="1899" height="691" alt="image" src="https://github.com/user-attachments/assets/f27f6a2b-58fd-4224-88b1-3a045baf37a5" />
+
+
+```yaml
+$kubectl apply -f deplyment.yml
+$kubectl apply  -f service.yml
+$kubectl get svc
+$kubectl get pods
+$kubectl describe pod name_pod
