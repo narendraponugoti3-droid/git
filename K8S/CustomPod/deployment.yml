@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: groww-custom-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: groww
+  template:
+    metadata:
+      labels:
+        app: groww
+    spec:
+      containers:
+        - name: growwlp-container
+          image: growwlp.azurecr.io/growwlp:v1.0.0
+      imagePullSecrets:
+        - name: growwacrsecret
