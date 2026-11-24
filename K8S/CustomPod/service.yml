@@ -7,7 +7,8 @@ spec:
     app: groww
   type: NodePort
   ports:
-    - port: 80
+   - port: 80
+     targetPort: 5000
 ```[cite: 2]
 
 *(Optional note: If your container inside the pod listens on a specific port like `8080` or `3000`, you can add `targetPort: 8080` under `- port: 80`, or `nodePort: 30080` if you want a fixed external port instead of an auto-assigned one in the 30000–32767 range.)*
