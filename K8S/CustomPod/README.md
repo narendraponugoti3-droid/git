@@ -56,7 +56,7 @@ $docker push growwlp.azurecr.io/growwlp:v1.0.0
 
 ### Pull the docker image from ACR to K8S 
 we need to pull the docker image from ACR to K8s , you need to perform  the authentication b/w Azure Devops and Azure CLoud
-
+```yaml
 go to ACR  --> IAM --> Add Role Assignment --> AcrPull 
 then Go to Kubernate VM 
 $sudo su -
@@ -67,7 +67,7 @@ Then Create a Service Principle
 $az ad sp create-for-rback --name "groww-acr-pull"  --role acrpull  --scopes //subscriptions/eb2e4db/resourcegroup/kuberg/providers/
   /Microsoft.ContainerRegistry/registries/growwlp 
 
-
+```
 <img width="1919" height="140" alt="image" src="https://github.com/user-attachments/assets/d50150c2-39d2-467f-a31d-c6a1999674a6" />
 
 <img width="1919" height="459" alt="image" src="https://github.com/user-attachments/assets/8042513f-b44b-4b73-a306-c647cf520d32" />
