@@ -3,3 +3,7 @@
 
 
 we need a metric server to monitor nods and pods 
+
+need to install metric servers 
+$kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
+$kubectl get pods -A -w
