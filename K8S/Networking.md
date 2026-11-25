@@ -61,12 +61,13 @@ A user accesses the Service on port 80, but the request reaches Spring Boot on p
 
 This is very common when deploying Spring Boot applications.
 ### 5. Remember these three ports
-Property	Purpose	Example
-containerPort	Container port	8080
-targetPort	Destination container port	8080
-port	Service port	80
+```yaml
+Property	Purpose	                         Example
+containerPort	Container port              	8080
+targetPort	Destination container port     	8080
+port	      Service port	                   80
 nodePort	Worker Node external port (NodePort Service)	30080
-
+```
 ### Remember the traffic flow:
 User → NodePort 3007 → Service port 80 → targetPort 80 → NGINX container port 80
 
